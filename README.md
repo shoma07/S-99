@@ -53,6 +53,13 @@ scala> S99.P07.flatten(List(List(1, 1), 2, List(3, List(5, 8))))
 res0: List[Any] = List(1, 1, 2, 3, 5, 8)
 ```
 
+### P08 - compress
+
+```
+scala> S99.P08.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+res0: List[Symbol] = List('a, 'b, 'c, 'a, 'd, 'e)
+```
+
 ### P18 - slice
 
 ```
