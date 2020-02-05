@@ -60,6 +60,69 @@ scala> S99.P08.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e,
 res0: List[Symbol] = List('a, 'b, 'c, 'a, 'd, 'e)
 ```
 
+### P09 - pack
+
+```
+scala> S99.P09.pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+res0: List[List[Symbol]] = List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e))
+```
+
+### P10 - encode
+
+```
+scala> S99.P10.encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
+```
+
+### P11 - encodeModified
+
+```
+scala> S99.P11.encodeModified(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+res0: List[Any] = List((4,'a), 'b, (2,'c), (2,'a), 'd, (4,'e))
+```
+
+### P12 - decode
+
+```
+scala> S99.P12.decode(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e)))
+res0: List[Symbol] = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
+```
+
+### P13 - encodeDirect
+
+```
+scala> S99.P13.encodeDirect(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
+```
+
+### P14 - duplicate
+
+```
+scala> S99.P14.duplicate(List('a, 'b, 'c, 'c, 'd))
+res0: List[Symbol] = List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd)
+```
+
+### P15 - duplicateN
+
+```
+scala> S99.P15.duplicateN(3, List('a, 'b, 'c, 'c, 'd))
+res0: List[Symbol] = List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd)
+```
+
+### P16 - drop
+
+```
+scala> S99.P16.drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+res0: List[Symbol] = List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k)
+```
+
+### P17 - split
+
+```
+scala> S99.P17.split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+res0: (List[Symbol], List[Symbol]) = (List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+```
+
 ### P18 - slice
 
 ```
