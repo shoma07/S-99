@@ -129,3 +129,55 @@ res0: (List[Symbol], List[Symbol]) = (List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 
 scala> S99.P18.slice(3, 7, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
 res0: List[Symbol] = List('d, 'e, 'f, 'g)
 ```
+
+### P19 - rotate
+
+```
+scala> S99.P19.rotate(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+res0: List[Symbol] = List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k, 'a, 'b, 'c)
+
+scala> S99.P19.rotate(-2, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
+res1: List[Symbol] = List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i)
+```
+
+### P20 - removeAt
+
+```
+scala> S99.P20.removeAt(1, List('a, 'b, 'c, 'd))
+res0: (List[Symbol], Symbol) = (List('a, 'c, 'd),'b)
+```
+
+### P21 - insertAt
+
+```
+scala> S99.P21.insertAt('new, 1, List('a, 'b, 'c, 'd))
+res0: List[Symbol] = List('a, 'new, 'b, 'c, 'd)
+```
+
+### P22 - range
+
+```
+scala> S99.P22.range(4, 9)
+res0: List[Int] = List(4, 5, 6, 7, 8, 9)
+```
+
+### P23 - randomSelect
+
+```
+scala> S99.P23.randomSelect(3, List('a, 'b, 'c, 'd, 'f, 'g, 'h))
+res0: List[Symbol] = List('e, 'd, 'a)
+```
+
+### P24 - lotto
+
+```
+scala> S99.P24.lotto(6, 49)
+res0: List[Int] = List(23, 1, 17, 33, 21, 37)
+```
+
+### P25 - randomPermute
+
+```
+scala> S99.P25.randomPermute(List('a, 'b, 'c, 'd, 'e, 'f))
+res0: List[Symbol] = List('b, 'a, 'd, 'c, 'e, 'f)
+```
